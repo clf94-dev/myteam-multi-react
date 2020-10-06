@@ -9,9 +9,7 @@ function TopAbout() {
             </Grid>
             <Grid item md={6} xs={12}>
                 <hr/>
-                <p>Finding the right people and building high performing teams can be hard. Most
-                    companies aren’t tapping into the abundance of global talent. We’re about to
-                    change that.</p>
+                <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
             </Grid>
         </Grid>
     )
