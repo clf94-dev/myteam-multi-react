@@ -1,4 +1,5 @@
 import React from 'react'
+import Cta from '../components/Cta'
 import HomeFeat from '../components/HomeFeat'
 import TopHome from '../components/TopHome'
 
@@ -7,6 +8,7 @@ function Home() {
         <div>
            <TopHome/> 
            <HomeFeat/>
+           <Cta/>
         </div>
     )
 }
