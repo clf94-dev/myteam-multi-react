@@ -17,3 +17,14 @@ $h2-size: 48px;
 $h3-size:18px;
 $body1-size:18px;
 $body2-size:15px;
+// General settings ----------------------
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-fam;
+}
+
+body {
+    overflow-x: hidden;
+}
