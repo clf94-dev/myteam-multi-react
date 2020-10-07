@@ -16,4 +16,19 @@ export const FeaturesInfo = [{
         text: 'Our customized platform with in-built analytics helps you manage your distributed teams.',
         imgAlt: 'Enhanced Productivity'
     }
+];
+
+export const AskAboutThings = [{
+        index: 0,
+        text: 'The quality of our talent network'
+    },
+    {
+        index: 1,
+        text: 'Usage & implementation of our software'
+    },
+    {
+        index: 2,
+        text: 'How we help drive innovation'
+    }
+
 ]
