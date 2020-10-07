@@ -2,6 +2,7 @@ import { Grid } from '@material-ui/core'
 import React from 'react'
 import FeatCard from './FeatCard'
 import { AskAboutThings } from './FeaturesInfo'
+import Form from './Form'
 
 function ContactSection() {
     return (
@@ -14,7 +15,7 @@ function ContactSection() {
 )})}
             </Grid>
             <Grid item lg={6} xs={12}>
-                
+                <Form/>
             </Grid>
         </Grid>
     )
