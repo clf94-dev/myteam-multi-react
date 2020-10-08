@@ -7,6 +7,8 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Footer from './Footer'
 
+import '../styles/App.css'
+
 function App() {
     return (
         <div>

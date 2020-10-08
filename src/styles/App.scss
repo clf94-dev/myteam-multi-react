@@ -29,3 +29,87 @@ body {
     overflow-x: hidden;
     background-color: $Midnight-green;
 }
+
+// Navbar style------------------------------
+.navbar {
+    height: 90px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    .navbar-cont {
+        display: flex;
+        justify-content: start;
+        height: 90px;
+        max-width: 1700px;
+        .navbar-logo {
+            text-align: start;
+            margin-left: 20px;
+            margin-top: 25px;
+            cursor: pointer;
+            align-items: center;
+            img {
+                align-self: start;
+                height: 40px;
+            }
+        }
+        .menu-icon {
+            display: none;
+        }
+        .fa-bars,
+        .fa-times {
+            color: $White;
+        }
+    }
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 35px;
+        list-style: none;
+        text-align: center;
+        justify-content: start;
+        margin-left: 50px;
+        align-items: center;
+        .nav-links {
+            text-decoration: none;
+            display: flex;
+            align-items: center !important;
+            justify-content: center;
+            color: $White;
+            font-family: $font-fam;
+            &:hover {
+                transition: all 0.3s ease;
+                color: $Light-coral;
+            }
+            &-mobile {
+                display: none;
+            }
+            .nav-item {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .transparent-btn {
+            @media screen and (min-width: 756px) {
+                position: absolute;
+                right: 40px;
+                top: 20px;
+            }
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            cursor: pointer;
+            border:1px solid $White;
+            background-color:transparent;
+            color:$White;
+            &:hover {
+                transition: all 0.2s ease-out;
+                background-color: $White;
+                .btn-link {
+                    color: $Midnight-green !important;
+                }
+            }
+        }
+    }
+}
