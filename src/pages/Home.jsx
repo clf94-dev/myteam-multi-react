@@ -5,6 +5,7 @@ import HomeFeat from '../components/HomeFeat'
 import HomeOpinions from '../components/HomeOpinions'
 import TopHome from '../components/TopHome'
 
+import '../styles/App.css'
 function Home() {
     return (
         <div>

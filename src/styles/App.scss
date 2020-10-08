@@ -113,3 +113,46 @@ body {
         }
     }
 }
+
+//TopHome component ------------------------------------
+.top-home-cont {
+    padding: 5% 7%;
+    .left {
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        h1 {
+            font-size: $h1-small;
+            font-weight: 300;
+            color: $White;
+            &.color {
+                color: $Light-coral;
+            }
+        }
+    }
+    .right {
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        hr {
+            @media screen and (max-width: 756px) {
+                display: none;
+            }
+            width: 30px;
+            height: 5px;
+            background-color: $Rapture-blue;
+            color: $Rapture-blue;
+            @media screen and (max-width: 1080px) {
+                margin-top: 5%;
+                margin-bottom: 15%;
+            }
+            margin-bottom: 5%;
+        }
+        p {
+            font-size: $body1-size;
+            font-family: $font-fam;
+            color: $White;
+            padding-right: 11%;
+        }
+    }
+}

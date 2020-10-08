@@ -106,3 +106,57 @@ body {
 .navbar .nav-menu .transparent-btn:hover .btn-link {
   color: #014d56 !important;
 }
+
+.top-home-cont {
+  padding: 5% 7%;
+}
+
+@media screen and (max-width: 756px) {
+  .top-home-cont .left {
+    text-align: center;
+  }
+}
+
+.top-home-cont .left h1 {
+  font-size: 64px;
+  font-weight: 300;
+  color: white;
+}
+
+.top-home-cont .left h1.color {
+  color: #f67e7e;
+}
+
+@media screen and (max-width: 756px) {
+  .top-home-cont .right {
+    text-align: center;
+  }
+}
+
+.top-home-cont .right hr {
+  width: 30px;
+  height: 5px;
+  background-color: #79c8c7;
+  color: #79c8c7;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 756px) {
+  .top-home-cont .right hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .top-home-cont .right hr {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+}
+
+.top-home-cont .right p {
+  font-size: 18px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  padding-right: 11%;
+}
