@@ -160,3 +160,94 @@ body {
   color: white;
   padding-right: 11%;
 }
+
+.features-cont {
+  padding: 5% 7%;
+  background-color: #012d32;
+}
+
+.features-cont .title-col {
+  margin-bottom: 50px;
+}
+
+.features-cont .title-col hr {
+  width: 30px;
+  height: 5px;
+  background-color: #f67e7e;
+  color: #f67e7e;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+  .features-cont .title-col hr {
+    margin-top: 2%;
+    margin-bottom: 9%;
+  }
+}
+
+.features-cont .title-col h2 {
+  font-size: 30px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  font-weight: 300;
+  padding-right: 35%;
+}
+
+@media screen and (max-width: 755px) {
+  .features-cont .title-col h2 {
+    padding-right: 40% !important;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .features-cont .title-col h2 {
+    padding-right: 18%;
+  }
+}
+
+.features-cont .feat-col .feat-card {
+  padding: 3%;
+}
+
+@media screen and (max-width: 755px) {
+  .features-cont .feat-col .feat-card {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.features-cont .feat-col .feat-card .img-col {
+  align-self: center !important;
+}
+
+.features-cont .feat-col .feat-card .img-col img {
+  width: 60px !important;
+}
+
+@media screen and (max-width: 755px) {
+  .features-cont .feat-col .feat-card .img-col {
+    margin-bottom: 20px;
+  }
+}
+
+.features-cont .feat-col .feat-card .feat-info-col h3 {
+  font-size: 18px;
+  font-family: "Livvic", sans-serif;
+  color: #f67e7e;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.features-cont .feat-col .feat-card .feat-info-col p {
+  font-size: 15px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 755px) {
+  .features-cont .feat-col .feat-card .feat-info-col p {
+    padding: 0 5%;
+  }
+}
