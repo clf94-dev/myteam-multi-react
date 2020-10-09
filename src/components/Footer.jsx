@@ -10,11 +10,11 @@ export default function Footer() {
                 <img src={Logo} alt="myteam"/>
                 <Grid container direction='row'>
                     <Grid item xs={6} className='footer-link'>
-                        <Link to='/'>
+                        <Link to='/' style={{textDecoration: 'none', color:'white'}} className='links home'>
                             Home</Link>
                     </Grid>
                     <Grid item xs={6} className='footer-link'>
-                        <Link to='/about'>About</Link>
+                        <Link to='/about' style={{textDecoration: 'none', color:'white'}} className='links about'>About</Link>
                     </Grid>
                 </Grid>
             </Grid>
@@ -33,13 +33,13 @@ export default function Footer() {
               </Grid>
             </Grid>
             <Grid item lg={3} sm={6} xs={12} className='social-cont'>
-                <Grid container direction='row' className='social-row'>
-                    <Grid item lg={12} sm={6} xs={12}>
+                <Grid container direction='row' className='social-col' >
+                    <Grid item lg={12} sm={6} xs={12} className='social-row'>
                         <i className='fab fa-facebook'></i>
                         <i className='fab fa-pinterest'></i>
                         <i className='fab fa-twitter'></i>
                     </Grid>
-                    <Grid item lg={12} sm={6} xs={12}>
+                    <Grid item lg={12} sm={6} xs={12} className='copy'>
                         <p>Copyright 2020. All Rights Reserved</p>
                     </Grid>
                 </Grid>

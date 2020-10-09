@@ -315,3 +315,99 @@ body {
         }
     }
 }
+
+//Footer component -------------------------
+.footer-cont {
+    background-color: $Sacramento-state-green;
+    padding: 5% 7%;
+    @media screen and (max-width: 756px) {
+        text-align: center;
+    }
+    img {
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .footer-link {
+        margin-bottom: 20px;
+        .links {
+            cursor: pointer;
+            &:hover {
+                transition: all 0.3s ease;
+                color: $Light-coral !important;
+            }
+            &.home {
+                @media screen and (max-width: 756px) {
+                    position: relative;
+                    left: 45px;
+                }
+            }
+            &.about {
+                @media screen and (max-width: 756px) {
+                    position: relative;
+                    left: -45px;
+                }
+            }
+        }
+    }
+    .direction {
+        @media screen and (max-width: 1080px) {
+            text-align: end;
+        }
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        color: $White;
+        font-size: $body2-size;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    .hidden-social {
+        @media screen and (min-width: 756px) and( max-width: 1080px) {
+            display: block;
+            color: $White;
+            i {
+                cursor: pointer;
+                margin-right: 10px;
+                &:hover {
+                    transition: all 0.3s ease;
+                    color: $Light-coral;
+                }
+            }
+        }
+        display:none;
+    }
+    .social-cont {
+        .copy {
+            @media screen and (min-width: 756px) and( max-width: 1080px) {
+                text-align: end;
+            }
+            p {
+                font-size: 12px;
+                color: $White;
+                font-family: $font-fam;
+                font-weight: 300;
+            }
+        }
+        .social-row {
+            @media screen and (min-width: 1080px) {
+                margin-bottom: 40px;
+            }
+            margin-bottom: 10px;
+            @media screen and (min-width: 756px) and( max-width: 1080px) {
+                i {
+                    display: none;
+                }
+            }
+            display:block;
+            color: $White;
+            i {
+                cursor: pointer;
+                margin-right: 10px;
+                &:hover {
+                    transition: all 0.3s ease;
+                    color: $Light-coral;
+                }
+            }
+        }
+    }
+}
