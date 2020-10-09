@@ -3,7 +3,7 @@ import React from 'react'
 
 function TopAbout() {
     return (
-        <Grid container direction='row'>
+        <Grid container direction='row' className='topAbout-cont'>
             <Grid item md={6} xs={12}>
                 <h2>About</h2>
             </Grid>

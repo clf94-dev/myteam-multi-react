@@ -41,10 +41,10 @@ body {
         display: flex;
         justify-content: start;
         height: 90px;
-        max-width: 1700px;
+        max-width: 1600px;
         .navbar-logo {
             text-align: start;
-            margin-left: 20px;
+            margin-left: 100px;
             margin-top: 25px;
             cursor: pointer;
             align-items: center;
@@ -409,5 +409,33 @@ body {
                 }
             }
         }
+    }
+}
+
+//TopAbout component -----------------------------
+.topAbout-cont {
+    padding: 5% 7%;
+    h2 {
+        font-size: $h1-small;
+        font-family: $font-fam;
+        font-weight: 400;
+        color: $White;
+    }
+    hr {
+        width: 30px;
+        height: 5px;
+        background-color: $Light-coral;
+        color: $Light-coral;
+        @media screen and (max-width: 1080px) {
+            margin-top: 2%;
+            margin-bottom: 9%;
+        }
+        margin-bottom: 5%;
+    }
+    p {
+        font-size: $body1-size;
+        font-family: $font-fam;
+        color: $White;
+        padding-right: 11%;
     }
 }

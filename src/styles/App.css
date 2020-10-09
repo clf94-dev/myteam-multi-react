@@ -22,12 +22,12 @@ body {
   display: flex;
   justify-content: start;
   height: 90px;
-  max-width: 1700px;
+  max-width: 1600px;
 }
 
 .navbar .navbar-cont .navbar-logo {
   text-align: start;
-  margin-left: 20px;
+  margin-left: 100px;
   margin-top: 25px;
   cursor: pointer;
   align-items: center;
@@ -483,4 +483,37 @@ body {
 .footer-cont .social-cont .social-row i:hover {
   transition: all 0.3s ease;
   color: #f67e7e;
+}
+
+.topAbout-cont {
+  padding: 5% 7%;
+}
+
+.topAbout-cont h2 {
+  font-size: 64px;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.topAbout-cont hr {
+  width: 30px;
+  height: 5px;
+  background-color: #f67e7e;
+  color: #f67e7e;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+  .topAbout-cont hr {
+    margin-top: 2%;
+    margin-bottom: 9%;
+  }
+}
+
+.topAbout-cont p {
+  font-size: 18px;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  padding-right: 11%;
 }
