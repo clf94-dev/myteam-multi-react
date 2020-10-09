@@ -315,3 +315,50 @@ body {
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
+.cta-cont {
+  background-color: #f67e7e;
+  padding: 5% 7%;
+}
+
+.cta-cont .text-col {
+  color: #014d56;
+}
+
+@media screen and (min-width: 756px) {
+  .cta-cont .text-col {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .cta-cont .text-col {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .cta-cont .btn-col {
+    padding-left: 28%;
+    margin-bottom: 50px;
+  }
+}
+
+.cta-cont .btn-col .transparent-btn {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #014d56;
+  background-color: transparent;
+  color: #014d56;
+}
+
+.cta-cont .btn-col .transparent-btn:hover {
+  transition: all 0.2s ease-out;
+  background-color: #014d56;
+  border-color: #014d56;
+  color: white;
+}

@@ -277,3 +277,41 @@ body {
         }
     }
 }
+
+//Cta component -------------------------------------
+.cta-cont {
+    background-color: $Light-coral;
+    padding: 5% 7%;
+    .text-col {
+        @media screen and (min-width: 756px) {
+            padding-left: 5%;
+        }
+        @media screen and (max-width: 756px) {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 7%;
+        }
+        color: $Midnight-green;
+    }
+    .btn-col {
+        @media screen and (max-width: 756px) {
+            padding-left: 28%;
+            margin-bottom: 50px;
+        }
+        .transparent-btn {
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 1px solid $Midnight-green;
+            background-color: transparent;
+            color: $Midnight-green;
+            &:hover {
+                transition: all 0.2s ease-out;
+                background-color: $Midnight-green;
+                border-color: $Midnight-green;
+                color: $White;
+            }
+        }
+    }
+}
