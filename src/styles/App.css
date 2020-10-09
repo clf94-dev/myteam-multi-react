@@ -251,3 +251,67 @@ body {
     padding: 0 5%;
   }
 }
+
+.opinions-cont {
+  padding: 30% 7%;
+}
+
+@media screen and (min-width: 756px) {
+  .opinions-cont {
+    padding: 10% 7%;
+  }
+}
+
+.opinions-cont h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 756px) {
+  .opinions-cont h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.opinions-cont h2.color {
+  color: #79c8c7;
+}
+
+.opinions-cont .opinion-card {
+  text-align: center;
+}
+
+.opinions-cont .opinion-card .quotes {
+  position: relative;
+  top: 30px;
+  z-index: -1;
+}
+
+.opinions-cont .opinion-card p {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  padding: 0 7% 30px;
+}
+
+.opinions-cont .opinion-card p.position {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.opinions-cont .opinion-card h3 {
+  font-size: 18px;
+  color: #79c8c7;
+  font-weight: 400;
+}
+
+.opinions-cont .opinion-card .avatar {
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}

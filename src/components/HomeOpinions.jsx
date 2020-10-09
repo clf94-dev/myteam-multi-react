@@ -5,8 +5,8 @@ import {OpinionsData} from './OpinionsData'
 
 function HomeOpinions() {
     return (
-        <Grid container direction='column'>
-            <h2>Delivering real results for top companies. Some of our success stories.</h2>
+        <Grid container direction='column' className='opinions-cont'>
+            <h2>Delivering real results for top companies. Some of our <h2 className='color'>success stories.</h2></h2>
             <Grid container direction='row'>
                 {OpinionsData.map(data => {
                     return (<OpinionsCard

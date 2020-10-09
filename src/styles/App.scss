@@ -226,3 +226,54 @@ body {
         }
     }
 }
+
+//HomeOpinions  component ------------------------
+.opinions-cont {
+    @media screen and (min-width: 756px) {
+        padding: 10% 7%;
+    }
+    padding: 30% 7%;
+    h2 {
+        font-size: $h2-size;
+        text-align: center;
+        font-family: $font-fam;
+        font-weight: 400;
+        color: $White;
+        @media screen and (min-width: 756px) {
+            margin-bottom: 30px;
+        }
+        margin-bottom: 10px;
+        &.color {
+            color: $Rapture-blue;
+        }
+    }
+    .opinion-card {
+        text-align: center;
+        .quotes {
+            position: relative;
+            top: 30px;
+            z-index: -1;
+        }
+        p {
+            font-size: $body1-size;
+            color: $White;
+            font-weight: 300;
+            padding: 0 7% 30px;
+            &.position {
+                margin-top: 10px;
+                font-size: $body2-size;
+            }
+        }
+        h3 {
+            font-size: $h3-size;
+            color: $Rapture-blue;
+            font-weight: 400;
+        }
+        .avatar {
+            width: 80px;
+            border: 2px solid $White;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    }
+}
