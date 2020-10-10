@@ -27,10 +27,16 @@ body {
 
 .navbar .navbar-cont .navbar-logo {
   text-align: start;
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 25px;
   cursor: pointer;
   align-items: center;
+}
+
+@media screen and (min-width: 756px) {
+  .navbar .navbar-cont .navbar-logo {
+    margin-left: 100px;
+  }
 }
 
 .navbar .navbar-cont .navbar-logo img {
@@ -38,8 +44,29 @@ body {
   height: 40px;
 }
 
+@media screen and (max-width: 756px) {
+  .navbar .navbar-cont .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(6%, 10%);
+  }
+}
+
 .navbar .navbar-cont .menu-icon {
   display: none;
+}
+
+@media screen and (max-width: 756px) {
+  .navbar .navbar-cont .menu-icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 1.8rem;
+    z-index: 2;
+    cursor: pointer;
+  }
 }
 
 .navbar .navbar-cont .fa-bars,
@@ -56,6 +83,38 @@ body {
   justify-content: start;
   margin-left: 50px;
   align-items: center;
+}
+
+@media screen and (max-width: 756px) {
+  .navbar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .navbar .nav-menu.active {
+    background-color: #014d56;
+    left: 10%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .navbar .nav-menu.active .nav-links {
+    font-size: 22px;
+    color: white;
+  }
+  .navbar .nav-menu.active .nav-links:hover {
+    cursor: pointer;
+    color: #79c8c7;
+  }
+  .navbar .nav-menu.active li:first-child {
+    margin-top: 70px;
+  }
 }
 
 .navbar .nav-menu .nav-links {

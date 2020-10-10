@@ -44,7 +44,10 @@ body {
         max-width: 1600px;
         .navbar-logo {
             text-align: start;
-            margin-left: 100px;
+            @media screen and(min-width: 756px) {
+                margin-left: 100px;
+            }
+            margin-left: 30px;
             margin-top: 25px;
             cursor: pointer;
             align-items: center;
@@ -52,9 +55,24 @@ body {
                 align-self: start;
                 height: 40px;
             }
+            @media screen and(max-width: 756px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(6%, 10%);
+            }
         }
         .menu-icon {
             display: none;
+            @media screen and (max-width: 756px) {
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 40px;
+                font-size: 1.8rem;
+                z-index: 2;
+                cursor: pointer;
+            }
         }
         .fa-bars,
         .fa-times {
@@ -70,6 +88,37 @@ body {
         justify-content: start;
         margin-left: 50px;
         align-items: center;
+        @media screen and (max-width: 756px) {
+            display: flex;
+            flex-direction: column;
+            padding-top: 7%;
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            left: 100%;
+            opacity: 0;
+            transition: all 0.5s ease;
+            &.active {
+                background-color: $Midnight-green;
+                left: 10%;
+                opacity: 1;
+                transition: all 0.5s ease;
+                z-index: 1;
+                .nav-links {
+                    font-size: 22px;
+                    color: $White;
+                    &:hover {
+                        cursor: pointer;
+                        color: $Rapture-blue;
+                    }
+                }
+                li {
+                    &:first-child {
+                        margin-top: 70px;
+                    }
+                }
+            }
+        }
         .nav-links {
             text-decoration: none;
             display: flex;
