@@ -7,23 +7,23 @@ import TheGuardian from '../images/logo-the-guardian.png'
 import Verge from '../images/logo-the-verge.png'
 function ClientsAbout() {
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column' className='clients-cont'>
             <h3>Some of our clients</h3>
-            <Grid container direction='row'>
-                <Grid item sm={3} xs={12}>
-                    <img src={Gadgets} style={{width: '100%'}} alt="Gadgets Now"/>
+            <Grid container direction='row' className='companies-row'>
+                <Grid item sm={3} xs={12} className='company-img'>
+                    <img src={Gadgets} alt="Gadgets Now"/>
                 </Grid>
-                <Grid item sm={3} xs={12}>
-                    <img src={Jakarta} style={{width: '100%'}} alt="Jakarta Post"/>
+                <Grid item sm={3} xs={12} className='company-img'>
+                    <img src={Jakarta}  alt="Jakarta Post"/>
                 </Grid>
-                <Grid item sm={2} xs={12}>
-                    <img src={Tech} style={{width: '100%'}} alt="Tech Radar"/>
+                <Grid item sm={2} xs={12} className='company-img'>
+                    <img src={Tech}  alt="Tech Radar"/>
                 </Grid>
-                <Grid item sm={2} xs={12}>
-                    <img src={TheGuardian} style={{width: '100%'}} alt="The Guardian"/>
+                <Grid item sm={2} xs={12} className='company-img'>
+                    <img src={TheGuardian}  alt="The Guardian"/>
                 </Grid>
-                <Grid item sm={2} xs={12}>
-                    <img src={Verge} style={{width: '100%'}} alt="The Verge"/>
+                <Grid item sm={2} xs={12} className='company-img'>
+                    <img src={Verge}  alt="The Verge"/>
                 </Grid>
             </Grid>
         </Grid>

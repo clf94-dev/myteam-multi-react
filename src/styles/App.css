@@ -614,3 +614,53 @@ body {
 .meet-section .meet-card button:hover {
   cursor: pointer;
 }
+
+.clients-cont {
+  padding: 10% 7%;
+  text-align: center;
+  background-color: #012d32;
+}
+
+@media screen and (min-width: 755px) {
+  .clients-cont {
+    padding: 5% 7%;
+  }
+}
+
+.clients-cont h3 {
+  font-size: 30px;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.clients-cont .companies-row {
+  align-items: center;
+}
+
+.clients-cont .companies-row .company-img {
+  padding: 5% 2%;
+}
+
+@media screen and (min-width: 755px) {
+  .clients-cont .companies-row .company-img {
+    padding: 3% 2%;
+  }
+}
+
+.clients-cont .companies-row .company-img img {
+  width: 40%;
+}
+
+@media screen and (min-width: 755px) {
+  .clients-cont .companies-row .company-img img {
+    width: 100%;
+  }
+}
+
+.clients-cont .companies-row .company-img img:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}

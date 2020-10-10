@@ -523,3 +523,40 @@ body {
         }
     }
 }
+
+//Clients component ------------------------------
+.clients-cont {
+    @media screen and (min-width: 755px) {
+        padding: 5% 7%;
+    }
+    padding:10% 7%;
+    text-align: center;
+    background-color: $Sacramento-state-green;
+    h3 {
+        font-size: $h2-size;
+        font-family: $font-fam;
+        font-weight: 400;
+        color: $White;
+        margin-bottom: 20px;
+    }
+    .companies-row {
+        align-items: center;
+        .company-img {
+            @media screen and (min-width: 755px) {
+                padding: 3% 2%;
+            }
+            padding: 5% 2%;
+            img {
+                @media screen and (min-width: 755px) {
+                    width: 100%;
+                }
+                width: 40%;
+                &:hover {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
