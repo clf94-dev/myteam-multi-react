@@ -5,7 +5,7 @@ import { MeetSectionInfo } from './MeetSectionInfo'
 
 function MeetSection() {
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column' className='meet-section'>
             <h3>Meet the directors</h3>
             <Grid container direction='row'>
                 {MeetSectionInfo.map(data => {
@@ -18,7 +18,7 @@ function MeetSection() {
                         description={data.description}/>)
                 })}
             </Grid>
-        </Grid>
+        </Grid>                 
     )
 }
 

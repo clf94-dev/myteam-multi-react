@@ -439,3 +439,87 @@ body {
         padding-right: 11%;
     }
 }
+
+//MeetSection component ---------------------------
+.meet-section {
+    padding: 5% 7%;
+    h3 {
+        text-align: center;
+        font-size: $h2-size;
+        font-family: $font-fam;
+        font-weight: 400;
+        color: $White;
+        margin-bottom: 50px;
+    }
+    .meet-card {
+        text-align: center;
+        .info-card1 {
+            padding-top: 25px;
+            margin: 0 auto;
+            width: 400px;
+            height: 250px;
+            background-color: $Sacramento-state-green;
+            img {
+                width: 100px;
+                border: 2px solid $White;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            .name {
+                font-size: $body1-size;
+                font-family: $font-fam;
+                color: $Rapture-blue;
+                margin-bottom: 5px;
+            }
+            .position {
+                font-size: $body2-size;
+                font-family: $font-fam;
+                color: $White;
+            }
+        }
+        .info-card2 {
+            margin: 0 auto;
+            padding: 8% 10%;
+            width: 400px;
+            height: 250px;
+            background-color: $Sacramento-state-green;
+            .name {
+                font-size: $body1-size;
+                font-family: $font-fam;
+                color: $Rapture-blue;
+                margin-bottom: 5px;
+            }
+            .description {
+                padding: 5% 10%;
+                font-size: $body2-size;
+                font-family: $font-fam;
+                color: $White;
+            }
+            .social-row {
+                margin-top: 15px;
+                justify-content: center;
+                i {
+                    color: $White;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    &:hover {
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        color: $Light-coral;
+                    }
+                }
+            }
+        }
+        button {
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 50%;
+            position: relative;
+            top: -25px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
