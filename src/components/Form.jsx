@@ -16,11 +16,11 @@ export default function Form() {
                     : 'Name'}
                     style={errors.name
                     ? {
-                        borderBottomColor: "red",
-                        color: 'red'
+                        borderBottomColor: "hsl(0, 87%, 73%)",
+                        color: 'hsl(0, 87%, 73%)'
                     }
                     : {
-                        borderBottomColor: "black"
+                        borderBottomColor: "hsl(187, 41%, 29%)"
                     }}
                     ref={register({required: true, maxLength: 30})}
                     className={errors.name
@@ -34,11 +34,11 @@ export default function Form() {
                     : 'Email'}
                     style={errors.email
                     ? {
-                        borderBottomColor: "red",
-                        color: 'red'
+                        borderBottomColor: "hsl(0, 87%, 73%)",
+                        color: 'hsl(0, 87%, 73%)'
                     }
                     : {
-                        borderBottomColor: "black"
+                        borderBottomColor: "hsl(187, 41%, 29%)"
                     }}
                     ref={register({required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i})}
                     className={errors.email
@@ -57,11 +57,11 @@ export default function Form() {
                     : 'Your message....'}
                     style={errors.message
                     ? {
-                        borderBottomColor: "red",
-                        color: 'red'
+                        borderBottomColor: "hsl(0, 87%, 73%)",
+                        color: 'hsl(0, 87%, 73%)'
                     }
                     : {
-                        borderBottomColor: "black"
+                        borderBottomColor: "hsl(187, 41%, 29%)"
                     }}
                     ref={register({required: true})}/>
             </form>

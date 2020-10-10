@@ -14,9 +14,9 @@ sans-serif;
 $h1-big: 100px;
 $h1-small: 64px;
 $h2-size: 30px;
-$h3-size:18px;
-$body1-size:18px;
-$body2-size:15px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
 // General settings ----------------------
 * {
     box-sizing: border-box;
@@ -100,9 +100,9 @@ body {
             width: 150px;
             border-radius: 20px;
             cursor: pointer;
-            border:1px solid $White;
-            background-color:transparent;
-            color:$White;
+            border: 1px solid $White;
+            background-color: transparent;
+            color: $White;
             &:hover {
                 transition: all 0.2s ease-out;
                 background-color: $White;
@@ -374,7 +374,7 @@ body {
                 }
             }
         }
-        display:none;
+        display: none;
     }
     .social-cont {
         .copy {
@@ -398,7 +398,7 @@ body {
                     display: none;
                 }
             }
-            display:block;
+            display: block;
             color: $White;
             i {
                 cursor: pointer;
@@ -529,7 +529,7 @@ body {
     @media screen and (min-width: 755px) {
         padding: 5% 7%;
     }
-    padding:10% 7%;
+    padding: 10% 7%;
     text-align: center;
     background-color: $Sacramento-state-green;
     h3 {
@@ -557,6 +557,105 @@ body {
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+}
+
+//Contact component ----------------------------
+.contact-cont {
+    padding: 5% 9%;
+    .askabout-col {
+        h2 {
+            @media screen and (max-width: 1080px) {
+                text-align: center;
+            }
+            font-size: $h1-small;
+            font-family: $font-fam;
+            font-weight: 400;
+            color: $White;
+        }
+        h3 {
+            @media screen and (max-width: 1080px) {
+                text-align: center;
+            }
+            font-size: $h2-size;
+            font-family: $font-fam;
+            font-weight: 400;
+            color: $Light-coral;
+            margin-bottom: 20px;
+        }
+        .feat-card {
+            @media screen and (max-width: 755px) {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            padding: 1%;
+            .img-col {
+                text-align: center;
+                img {
+                    width: 60px !important;
+                }
+                @media screen and (max-width:755px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .feat-info-col {
+                p {
+                    font-size: $body2-size;
+                    font-family: $font-fam;
+                    color: $White;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                    @media screen and (max-width: 755px) {
+                        padding: 0 5%;
+                    }
+                }
+            }
+        }
+    }
+    .form-col {
+        @media screen and (min-width: 1081px) {
+            padding: 2% 5%;
+        }
+        padding-top: 3%;
+        input {
+            width: 100%;
+            outline: none;
+            border: none;
+            font-family: $font-fam;
+            color: $White;
+            border-bottom: 1px solid $Police-blue;
+            background-color: transparent;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            outline: none;
+            border: none;
+            font-family: $font-fam;
+            color: $White;
+            border-bottom: 1px solid $Police-blue;
+            background-color: transparent;
+            margin-bottom: 35px;
+        }
+    }
+    .submit-btn {
+        margin-top: 3%;
+        margin-bottom: 10%;
+        color: $White;
+        border: 1px solid $Sacramento-state-green;
+        background-color: $Sacramento-state-green;
+        border-radius: 25px;
+        height: 50px;
+        width: 200px;
+        font-family: $font-fam;
+        &:hover {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background-color: $White;
+            color: $Midnight-green;
+            border: 1px solid $White;
         }
     }
 }
