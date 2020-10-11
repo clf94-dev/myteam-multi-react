@@ -3,6 +3,11 @@ import React from 'react'
 import MeetCard from './MeetCard'
 import { MeetSectionInfo } from './MeetSectionInfo'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 function MeetSection() {
     return (
         <Grid container direction='column' className='meet-section'>
@@ -15,7 +20,9 @@ function MeetSection() {
                         name={data.name}
                         position={data.position}
                         imgAlt={data.imgAlt}
-                        description={data.description}/>)
+                        description={data.description}
+                        delay={data.delay}
+                        />)
                 })}
             </Grid>
         </Grid>                 

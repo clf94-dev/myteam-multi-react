@@ -10,6 +10,8 @@ import Drake from '../images/avatar-drake.jpg'
 import Griffin from '../images/avatar-griffin.jpg'
 import Aden from '../images/avatar-aden.jpg'
 
+
+
 function MeetCard(props) {
     const avatars = [
         Nikita,
@@ -24,7 +26,7 @@ function MeetCard(props) {
         setClick] = useState(false);
     const handleClick = () => setClick(!click);
     return (
-        <Grid item lg={4} sm={6} xs={12} className='meet-card'>
+        <Grid item lg={4} sm={6} xs={12} className='meet-card' data-aos={!click?'flip-left': 'flip-right'} data-aos-delay={props.delay}>
             <Grid
                 container
                 className='info-card1'
@@ -32,7 +34,9 @@ function MeetCard(props) {
                 display: !click
                     ? 'block'
                     : 'none'
-            }}>
+            
+            }}
+            >
                 <img src={avatars[props.index]} alt={props.imgAlt}/>
                 <p className="name">{props.name}</p>
                 <p className='position'>
@@ -46,7 +50,8 @@ function MeetCard(props) {
                 display: click
                     ? 'block'
                     : 'none'
-            }}>
+            }}
+           >
 
                 <p className="name">{props.name}</p>
                 <p className='description'>
