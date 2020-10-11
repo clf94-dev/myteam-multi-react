@@ -6,7 +6,8 @@ export default function Form() {
     const {handleSubmit, register, errors} = useForm();
     const onSubmit = values => console.log(values);
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column'  data-aos='fade-left'
+        data-aos-delay='700'>
             <form >
                 <input
                     type="text"
